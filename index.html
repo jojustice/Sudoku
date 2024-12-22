@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Sudoku, Sudoku Game, Sudoku Puzzle">
+	  <title>Sudoku</title>
+    <link rel = "stylesheet" href="style.css">
+    <script type = "text/javascript" src = "script.js"></script>
+  </head>
+  <body class = "light">
+    <h1>Sudoku</h1>
+    <hr>
+    <div id = "options">
+      <div is = "level">
+        <h3>Difficulty:</h3>
+        <label><input id="easy" type = "radio" name = "level" value = "easy" checked>Easy</label>
+        <label><input id="medium" type = "radio" name = "level" value = "medium">Medium</label>
+        <label><input id="hard" type = "radio" name = "level" value = "hard">Hard</label>
+      </div>
+      <div id = "theme">
+        <h3>Theme:</h3>
+        <label><input id="light" type = "radio" name = "theme" value = "light" checked>Light</label>
+        <label><input id="dark" type = "radio" name = "theme" value = "dark">Dark</label>
+        <label><input id="brown" type = "radio" name = "theme" value = "brown">Brown</label>
+        <label><input id="olive" type = "radio" name = "theme" value = "olive">Olive</label>
+      </div>
+    </div>
+    <button id = "newGame">New Game</button>
+    <hr>
+    <div id = "endMessage">
+      <p id = "endText"></p>
+    </div>
+    <div id = "gamePlay" class = "hide">
+      <button id = "check">Check</button>
+      <h2 id = "errors" class = "hide">Errors Left:</h2>
+    </div>
+    <div id = "board"></div>
+    <div id = "numbers" class = "hide">
+      <p id = "1">1</p>
+      <p id = "2">2</p>
+      <p id = "3">3</p>
+      <p id = "4">4</p>
+      <p id = "5">5</p>
+      <p id = "6">6</p>
+      <p id = "7">7</p>
+      <p id = "8">8</p>
+      <p id = "9">9</p>
+      <p id = "clear">&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <p>Joel Justice</p>
+  </body>
+</html>
